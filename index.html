@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f2342">
+  <meta name="description" content="Thiệp mời lễ tốt nghiệp của Trần Phạm Thanh Phong">
+  <title>Thiệp mời tốt nghiệp | Trần Phạm Thanh Phong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Màn hình phong bì mở thiệp -->
+    <section class="scene" id="opening" aria-label="Mở thiệp mời">
+      <div class="ambient"></div>
+      <div class="intro">
+        <p class="eyebrow">A special invitation · Class of 2026</p>
+        <h1>Trân trọng kính mời</h1>
+        <p class="sub">Lễ tốt nghiệp · Graduation Ceremony</p>
+        
+        <div class="envelope-wrap" id="envelopeWrap">
+          <div class="envelope">
+            <div class="env-back"></div>
+            <div class="letter-peek">
+              <div class="peek-inner">
+                <small class="peek-label">Kính mời:</small>
+                <span class="peek-guest" id="guestName">Bạn &amp; Người thương</span>
+              </div>
+            </div>
+            <div class="env-flap"></div>
+            <div class="env-front"></div>
+            <button type="button" class="seal" id="openSeal" aria-label="Chạm để mở thiệp">
+              <span>TP</span>
+              <small>MỞ THIỆP</small>
+            </button>
+          </div>
+        </div>
+        
+        <p class="hint"><b>Chạm vào con dấu vàng</b> để mở thiệp</p>
+      </div>
+    </section>
+
+    <!-- Nội dung chính của thiệp -->
+    <section class="invitation" id="invitation" aria-label="Nội dung thiệp mời">
+      <article class="paper">
+        <!-- Khung viền kép & hoa văn trang trí 4 cạnh -->
+        <div class="frame-outer"></div>
+        <div class="frame-inner"></div>
+        <i class="corner tl"></i><i class="corner tr"></i>
+        <i class="corner bl"></i><i class="corner br"></i>
+        <div class="edge-dots top"><span></span><span></span><span></span></div>
+        <div class="edge-dots bottom"><span></span><span></span><span></span></div>
+        <div class="side-dots left"><span></span><span></span><span></span><span></span></div>
+        <div class="side-dots right"><span></span><span></span><span></span><span></span></div>
+        
+        <div class="paper-content">
+          <div class="top-ornament">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <p class="kicker">Trân trọng kính mời</p>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+
+          <h2>LỄ TỐT NGHIỆP</h2>
+          <p class="english">Graduation Ceremony</p>
+          
+          <!-- Vòng nguyệt quế vàng kim bao quanh Logo STU chuẩn SVG -->
+          <div class="emblem-wrap" aria-label="Logo Trường Đại học Công nghệ Sài Gòn">
+            <div class="emblem-ring-outer"></div>
+            <div class="emblem-ring-inner"></div>
+            <div class="stu-logo-box">
+              <svg class="stu-svg" viewBox="0 0 220 142" role="img" aria-label="Saigon Technology University - STU">
+                <!-- Chữ SAIGON TECHNOLOGY UNIVERSITY nghiêng đúng tỷ lệ logo gốc -->
+                <g font-family="'Times New Roman', Georgia, serif" font-style="italic" font-weight="bold" font-size="14.5" fill="#ffffff" letter-spacing="0.4">
+                  <text x="46" y="20">SAIGON</text>
+                  <text x="42" y="36">TECHNOLOGY</text>
+                  <text x="38" y="52">UNIVERSITY</text>
+                </g>
+                <!-- 3 khối bình hành xanh băng nhạt -->
+                <polygon points="30,60 84,60 66,136 12,136" fill="#afc3e6"/>
+                <polygon points="92,60 146,60 128,136 74,136" fill="#afc3e6"/>
+                <polygon points="154,60 208,60 190,136 136,136" fill="#afc3e6"/>
+                <!-- Chữ S - T - U chuẩn màu trường -->
+                <text x="48" y="121" text-anchor="middle" font-family="'Times New Roman', Georgia, serif" font-weight="bold" font-size="66" fill="#0b4a8c">S</text>
+                <text x="110" y="121" text-anchor="middle" font-family="'Times New Roman', Georgia, serif" font-weight="bold" font-size="66" fill="#e64626">T</text>
+                <text x="172" y="121" text-anchor="middle" font-family="'Times New Roman', Georgia, serif" font-weight="bold" font-size="66" fill="#0b4a8c">U</text>
+              </svg>
+            </div>
+          </div>
+
+          <p class="invite-line">Thân mời bạn đến chung vui cùng</p>
+          <h3 class="graduate" id="graduateName">Trần Phạm Thanh Phong</h3>
+          <p class="bodycopy">
+            Một chặng đường thanh xuân tại giảng đường đã khép lại, mở ra những hành trình mới đầy khát vọng. 
+            Sự hiện diện của bạn sẽ là niềm vui và vinh dự lớn đối với mình trong khoảnh khắc ý nghĩa này.
+          </p>
+
+          <!-- Bộ đếm ngược thời gian thực -->
+          <div class="countdown-box" aria-label="Thời gian đếm ngược">
+            <p class="countdown-title">Đếm ngược đến giờ khai lễ</p>
+            <div class="countdown" id="countdown">
+              <div class="cd-item">
+                <span id="cdDays">00</span>
+                <small>Ngày</small>
+              </div>
+              <div class="cd-sep">:</div>
+              <div class="cd-item">
+                <span id="cdHours">00</span>
+                <small>Giờ</small>
+              </div>
+              <div class="cd-sep">:</div>
+              <div class="cd-item">
+                <span id="cdMinutes">00</span>
+                <small>Phút</small>
+              </div>
+              <div class="cd-sep">:</div>
+              <div class="cd-item">
+                <span id="cdSeconds">00</span>
+                <small>Giây</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thông tin Thời gian & Địa điểm -->
+          <div class="details">
+            <div class="detail">
+              <label>Thời gian · Date & Time</label>
+              <strong id="eventDate">Thứ Sáu, 04/12/2026</strong>
+              <small id="eventTime">08:00 – 11:00</small>
+            </div>
+            <div class="detail">
+              <label>Địa điểm · Venue</label>
+              <strong id="eventVenue">Trường Đại học Công nghệ Sài Gòn (STU)</strong>
+              <small id="eventAddress">180 Cao Lỗ, Phường Chánh Hưng, TP.HCM</small>
+            </div>
+          </div>
+
+          <!-- Các nút hành động -->
+          <div class="actions">
+            <a class="action" id="mapLink" href="https://www.google.com/maps/search/?api=1&query=Trường+Đại+học+Công+nghệ+Sài+Gòn+180+Cao+Lỗ" target="_blank" rel="noopener">
+              ⌖ &nbsp; Chỉ đường Google Maps
+            </a>
+            <a class="action secondary" id="contactLink" href="https://web.facebook.com/Yuta.Gios/" target="_blank" rel="noopener">
+              ✉ &nbsp; <span id="contactLabel">Liên hệ xác nhận</span>
+            </a>
+          </div>
+
+          <div class="ornament">✦</div>
+          
+          <p class="closing">Sự hiện diện của bạn là niềm vinh hạnh của mình.</p>
+          <p class="signature">Trần Phạm Thanh Phong</p>
+        </div>
+      </article>
+      <footer>Saigon Technology University · Class of 2026</footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
